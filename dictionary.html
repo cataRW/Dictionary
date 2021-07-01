@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="dictionary.css">
+    <title>Dictionary</title>
+  </head>
+
+  <body background="dictionary.jpg">
+    <center>
+    <h2> The Dictionary </h2>
+    </center>
+
+    <div class="containerAddWord">
+        <label for="addWord" class="addLabel"> Add your word here: </label>
+        <input id="addWord" type="text" name="addWord" value="" autofocus>
+        <input class="submit" type="submit" name="submit" value="send" onclick="addWord()">
+    </div>
+
+    <div class="containerSearchWord">
+        <label for="searchWord" class="searchLabel">Search your word here: </label>
+        <input id="searchWord" type="text" name="searchWord" value="" autofocus>
+        <input class="submit" type="submit" name="submit" value="send" onclick="searchWord()">
+    </div>
+
+    <center>
+    <p class="resultStatus"></p>
+    <center>
+      
+    <script src="dictionary.js"></script>
+  </body>
+</html>
